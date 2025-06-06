@@ -134,6 +134,7 @@
       function manage_result_find_unused(result) {
 
          //$('.shortcodes_result').append(result);
+         if (result == "") return;
 
          var result_array = JSON.parse(result);
 

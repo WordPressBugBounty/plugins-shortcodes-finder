@@ -14,7 +14,7 @@
 
 define('SHORTCODES_FINDER_MAX_CONTENT_CHAR', 100);
 
-error_reporting(E_ERROR);
+// error_reporting(E_ERROR);
 
 /**
  * Handle main admin page
@@ -772,7 +772,7 @@ function sf_admin_page_about_handler() { ?>
 									<?php endif ?>
 								" class="button button-primary"><?php echo esc_html__('Install') ?></a></li>
 							<?php endif; ?>
-							<li><a href="
+							<li><a target="_blank" href="
 								<?php if ( is_multisite() ) : ?>
 									<?php echo esc_url( network_admin_url( 'plugin-install.php?tab=plugin-information&amp;plugin='. $plugin_slug ) ) ?>
 								<?php else : ?>
@@ -817,7 +817,7 @@ function sf_admin_page_about_handler() { ?>
 									" class="button button-primary"><?php echo esc_html__('Install') ?></a>
 								</li>
 							<?php endif; ?>
-							<li><a href="
+							<li><a target="_blank" href="
 								<?php if ( is_multisite() ) : ?>
 									<?php echo esc_url( network_admin_url( 'plugin-install.php?tab=plugin-information&amp;plugin='. $plugin_slug ) ) ?>
 								<?php else : ?>
