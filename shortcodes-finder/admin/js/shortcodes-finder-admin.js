@@ -99,7 +99,8 @@
             ajax_vars.ajax_url, {
                'action': action,
                'posts': array_to_pass,
-               'post_type': ajax_vars.post_type
+               'post_type': ajax_vars.post_type,
+               'nonce': ajax_vars.nonce
             },
             function(response) {
                if (response === '-1') {
